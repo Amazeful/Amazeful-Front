@@ -1,0 +1,20 @@
+plugins:
+  - "prettier"
+extends:
+  - "plugin:@typescript-eslint/recommended"
+  - "prettier"
+  - "plugin:prettier/recommended"
+  - "react-app"
+
+overrides:
+  - files:
+      - "**/__tests__/**/*"
+      - "**/*.{spec,test}.*"
+    env:
+      jest: true
+    plugins:
+      - "jest"
+    extends:
+      - "plugin:jest/recommended"
+      - "plugin:jest/style"
+      - "react-app/jest"

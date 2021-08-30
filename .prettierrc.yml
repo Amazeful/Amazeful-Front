@@ -1,0 +1,7 @@
+# @format
+
+trailingComma: none
+tabWidth: 2
+bracketSpacing: true
+arrowParens: always
+singleQuote: true
